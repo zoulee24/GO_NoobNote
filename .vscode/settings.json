@@ -1,0 +1,15 @@
+{
+	"go.buildOnSave": "workspace",
+	"go.lintOnSave": "package",
+	"go.vetOnSave": "package",
+	"go.buildTags": "",
+	"go.buildFlags": [],
+	"go.lintFlags": [],
+	"go.vetFlags": [],
+	"go.coverOnSave": false,
+	"go.useCodeSnippetsOnFunctionSuggest": false,
+	"go.formatOnSave": true,
+	"go.goroot": "C:\\Program Files\\Go",
+	"go.gopath": "C:\\Users\\zoulee\\go",
+	"go.gocodeAutoBuild": false
+}
