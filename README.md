@@ -15,6 +15,12 @@ Q3: 如何运行代码:
 	cd noob_go
 	go run .\noob_go\xx.go
 
-Q4: 因为暂时不知道package的用法：
+Q4: package的用法：
 
-	需要使用的话吧 package _xx 改为 package main
+	package main里面只能有一个main函数
+	可以有很多go文件是package main
+
+	或者 package 包名
+	
+	必须放在GOPATH得src里面
+	不能有main函数
