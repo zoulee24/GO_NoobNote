@@ -244,7 +244,7 @@ func RunAnimalDialog(owner walk.Form, animal *Animal) (int, error) {
 					},
 					PushButton{
 						AssignTo:  &cancelPB,
-						Text:      "Cancel",
+						Text:	   "Cancel",
 						OnClicked: func() { dlg.Cancel() },
 					},
 				},
