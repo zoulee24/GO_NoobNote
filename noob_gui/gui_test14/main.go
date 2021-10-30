@@ -36,9 +36,12 @@ func main() {
 			mw.updateTitle(mw.CurrentPageTitle())
 		},
 		PageCfgs: []PageConfig{
-			{"Foo", "document-new.png", newFooPage},
-			{"Bar", "document-properties.png", newBarPage},
-			{"Baz", "system-shutdown.png", newBazPage},
+			// {"Foo", "document-new.png", newFooPage},
+			// {"Bar", "document-properties.png", newBarPage},
+			// {"Baz", "system-shutdown.png", newBazPage},
+			{"Foo", newFooPage},
+			{"Bar", newBarPage},
+			{"Baz", newBazPage},
 		},
 	}
 
@@ -118,7 +121,8 @@ func newBarPage(parent walk.Container) (Page, error) {
 		Layout:   HBox{},
 		Children: []Widget{
 			HSpacer{},
-			Label{Text: "I'm the Bar page"},
+			Label{
+				Text: "I'm the Bar page---"},
 			HSpacer{},
 		},
 	}).Create(NewBuilder(parent)); err != nil {

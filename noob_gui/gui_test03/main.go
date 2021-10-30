@@ -57,7 +57,7 @@ func NewEnvModel() *EnvModel {
  
         m.items[i] = EnvItem{name, value}
     }
- 
+
     return m
 }
 

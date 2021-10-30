@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"strconv"
-	// "fmt"
+	"fmt"
 	// "math"
 )
  
@@ -47,6 +47,13 @@ func main() {
 	}).Run(); err != nil {
 		log.Fatal(err)
 	}
+	//按关闭后才会执行（bug）
+	a := 0
+	for a < 100 {
+		fmt.Printf("a=%d\n", a)
+		a++
+	}
+
 }
 
 
